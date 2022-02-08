@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><link rel="stylesheet" href="css/css-bulma.min.css">
+<link rel="stylesheet" href="css/css-bulma-tooltip.min.css">
+<link rel="stylesheet" href="css/css-embed.css">
+</head><body><div class="modal" id="embed">
+<div class="modal-background"></div>
+<div class="modal-content">
+<div class="has-background-white" style="padding: 30px;">
+<small><i>Copy this code to show your CPPS on your own website!</i></small>
+<br><br>
+<textarea class="textarea" rows="2" readonly onclick="this.select();">&lt;iframe src='https://play.cppscreator.com/embed/26327' scrolling='no' width='960' height='600' frameborder=0&gt;&lt;/iframe&gt;</textarea>
+<br>
+<div class="buttons">
+<a class="button is-warning close-modal" data-modal-id="#embed" aria-label="close" href="embed.html">
+<strong>Close</strong>
+</a>
+</div>
+</div>
+</div>
+<button class="modal-close is-large" data-modal-id="#embed" aria-label="close"></button>
+</div>
+<div class="modal" id="transformations">
+<div class="modal-background"></div>
+<div class="modal-content">
+<div class="has-background-white" style="padding: 30px;">
+<div class="columns is-multiline">
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(0)">Penguin</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(97)">Herbert</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(1)">Darth Herbert</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(2)">Frostbite</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(3)">Jedi Black</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(4)">Jedi Brown</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(5)">Ghost 1</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(6)">Ghost 2</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(7)">Ghost 3</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(8)">Ghost 4</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(9)">Ghost 5</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(10)">Ghost 6</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(11)">Ghost 7</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(12)">Ghost 8</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(13)">Ghost 9</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(14)">Ghost 10</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(15)">Ghost 11</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(16)">Ghost 12</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(17)">Ghost 13</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(18)">Ghost 14</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(19)">Ghost 15</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(20)">Reindeer</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(21)">Penguin Tracetracker</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(22)">Puffle Black</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(23)">Puffle Blue</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(24)">Puffle Brown</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(25)">Puffle Green</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(26)">Puffle Orange</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(27)">Puffle Pink</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(28)">Puffle Purple</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(29)">Puffle Rainbow</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(30)">Puffle Red</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(31)">Puffle White</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(32)">Puffle Yellow</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(44)">Puffle Cat</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(47)">Puffle Dog</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(48)">Puffle Gold</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(49)">Purple Trex Puffle</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(50)">Black Trex Puffle</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(33)">Darth Vader</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(34)">Vampire A</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(35)">Vampire B</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(36)">Vampire C</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(37)">Werewolf A</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(38)">Werewolf B</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(39)">Werewolf C</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(40)">White Unicorn Puffle</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(41)">Zombie A</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(42)">Zombie B</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(43)">Zombie C</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(46)">Marshmellow</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(51)">Robot</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(52)">Merrywalrus</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(53)">Sasquatch</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(54)">Blue car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(72)">Green car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(73)">Pink car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(74)">Black car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(75)">Red car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(76)">Orange car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(77)">Yellow car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(78)">Purple car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(79)">Brown car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(80)">Peach car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(81)">Dark Green car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(82)">Light Blue car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(83)">Lime Green car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(84)">Sensei Gray car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(85)">Aqua car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(86)">Arctic White car</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(87)">Crab</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(56)">Crab A</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(57)">Crab B</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(55)">Crab C</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(58)">Rainbow Dash</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(59)">Pinkie Pie</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(60)">Penguin Robot</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(61)">Rainbow Unicorn</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(62)">Bing Bong</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(63)">Olaf</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(64)">Trex special</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(65)">Triceratops Orange</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(66)">Triceratops Green</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(67)">Triceratops Purple</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(68)">Triceratops Red</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(69)">Pterodactyl Red</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(70)">Pterodactyl Yellow</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(71)">Pterodactyl Green</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(88)">Snail</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(90)">Hell Hound</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(91)">Snake</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(92)">Spider</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(93)">ZINGY</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(94)">Penguin Isles Penguin</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(95)">Penguin Shellnut</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(96)">Ghost Puffle</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(45)">Dragon</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(98)">Puffle Pink Stegosaurus</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(99)">Puffle Red Triceratops</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(100)">Puffle Yellow Stegosaurus</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(101)">Puffle Blue Triceratops</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(102)">Raptor Black</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(103)">Kermit</button>
+</div>
+<div class="column is-narrow">
+<button type="button" class="button is-info is-small" onclick="doTransform(104)">Invisible Transform</button>
+</div>
+</div>
+<br>
+<div class="buttons">
+<a class="button is-warning close-modal" data-modal-id="#transformations" aria-label="close" href="embed.html">
+<strong>Close</strong>
+</a>
+</div>
+</div>
+</div>
+<button class="modal-close is-large" data-modal-id="#transformations" aria-label="close"></button>
+</div>
+<div class="modal" id="glows">
+<div class="modal-background"></div>
+<div class="modal-content">
+<div class="has-background-white" style="padding: 30px;">
+<table style="width: 100%;">
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Namecolor</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="namecolor">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('namecolor')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Nameglow</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="nameglow">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('nameglow')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Bubblecolor</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="bubblecolor">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('bubblecolor')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Bubbletext</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="bubbletext">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('bubbletext')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Ringcolor</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="ringcolor">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('ringcolor')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Moodcolor</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="moodcolor">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('moodcolor')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Moodglow</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="moodglow">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('moodglow')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="has-text-left" style="vertical-align: middle;"><strong>Penguin glow</strong></td>
+<td class="is-pulled-right" style="vertical-align: middle;">
+<div class="field has-addons mb-1">
+<div class="control">
+<input type="text" class="input jscolor {pickerPosition:'left'}" id="penguinglow">
+</div>
+<div class="control">
+<button type="button" class="button is-danger" onclick="removeGlow('penguinglow')"><i class="fas fa-times" style="font-size: 12px;"></i></button>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<br>
+<div class="buttons">
+<a class="button is-success" onclick="updateGlows();" href="embed.html">
+<strong>Update</strong>
+</a>
+<a class="button is-warning close-modal" data-modal-id="#glows" aria-label="close" href="embed.html">
+<strong>Close</strong>
+</a>
+</div>
+</div>
+</div>
+<button class="modal-close is-large" data-modal-id="#glows" aria-label="close"></button>
+</div>
+<div id="gameWrapper">
+<div id="game">
+<object id="cppscreatorCPPS" type="application/x-shockwave-flash" data="https://play.cppscreator.com/media/play/v2/client/cppscreator.swf?play=https://play.cppscreator.com/media/play/&amp;&amp;client=https://play.cppscreator.com/media/play/v2/client/&amp;&amp;content=https://play.cppscreator.com/media/play/v2/content/&amp;&amp;games=https://play.cppscreator.com/media/play/v2/games/&amp;&amp;lang=en&amp;&amp;p=0&amp;&amp;a=1&amp;&amp;connectionID=1556&amp;&amp;isOnline=0&amp;&amp;cppsName=roow51 club penguin&amp;&amp;lp=29220&amp;&amp;rp=57054&amp;&amp;isPremium=1&amp;&amp;wm=Welcome to CPPSCreator! Follow our twitter http://twitter.com/cppscreator_co!&amp;&amp;wme=0&amp;&amp;cppsID=26327&amp;&amp;time=1644335705&amp;&amp;clothing=&amp;&amp;merch=&amp;&amp;costume=&amp;&amp;sport=&amp;&amp;igloo=&amp;&amp;furniture=&amp;&amp;light=&amp;&amp;cppsMap=&amp;&amp;MemberLink=" width="100%" height="100%"><param value="false"><param name="quality" value="high"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"></object>
+</div>
+</div>
+<script src="js/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script type="text/javascript" src="js/2.0.4-jscolor.min.js"></script>
+<script type="text/javascript" src="js/js-bulma-extensions.min.js"></script>
+<script type="text/javascript" src="js/js-bulma-toast.min.js"></script>
+<script src="js/11277b4f51.js"></script>
+<script data-cfasync="false" type="text/javascript">
+	function setupGame(nickname, myExtras, myGlows, myMoods) {
+		var myExtras = JSON.parse(myExtras);
+		var myGlows = JSON.parse(myGlows);
+		var myMoods = JSON.parse(myMoods);
+		for(var glow in myGlows) {
+			if(Number(myExtras[glow]) == 0) {
+				disableGlow("#" + glow.toLowerCase());
+			} else {
+				if(myGlows[glow] == "0") {
+					removeGlow(glow);
+				} else {
+					changeGlowColor("#" + glow.toLowerCase(), myGlows[glow]);
+				}
+			}
+		}
+		for(var glow in myMoods) {
+			if(glow != "Mood") {
+				if(Number(myExtras[glow]) == 0) {
+					disableGlow("#" + glow.toLowerCase());
+				} else {
+					if(myMoods[glow] == "0") {
+						removeGlow(glow);
+					} else {
+						changeGlowColor("#" + glow.toLowerCase(), myMoods[glow]);
+					}
+				}
+			}
+		}
+	}
+	function removeGlow(glow) {
+		try {
+			$("#" + glow.toLowerCase())[0].jscolor.fromString("FFFFFF");
+			$("#" + glow.toLowerCase()).val("0");
+		} catch(e) {
+			console.log(glow + " - Invalid");
+		}
+	}
+	function changeGlowColor(glow, newColor) {
+		$(glow)[0].jscolor.fromString(newColor);
+	}
+	function disableGlow(glow) {
+		$(glow).prop('disabled', true);
+	}
+	function doTransform(transformID) {
+		thisMovie("cppscreatorCPPS").updateTransformation(transformID);
+		$(".modal").removeClass("is-active");
+	}
+	function connectionLost() {
+		$(".modal").removeClass("is-active");
+		//parent.connectionLost();	
+	}
+	function thisMovie(movieName) {
+		if (navigator.appName.indexOf("Microsoft") != -1) {
+			return window[movieName]
+		} else {
+			return document[movieName]
+		}
+	}
+	function showContent(modal) {
+		$(".modal").removeClass("is-active");
+		$(modal).addClass("is-active");
+	}
+	function updateGlows() {
+		var myGlows = {};
+		myGlows.nc = String($('#namecolor').val());
+		myGlows.ng = String($('#nameglow').val());
+		myGlows.bc = String($('#bubblecolor').val());
+		myGlows.bt = String($('#bubbletext').val());
+		myGlows.rc = String($('#ringcolor').val());
+		myGlows.mc = String($('#moodcolor').val());
+		myGlows.mg = String($('#moodglow').val());
+		myGlows.pg = String($('#penguinglow').val());
+		thisMovie("cppscreatorCPPS").updateGlows(JSON.stringify(myGlows));
+		$(".modal").removeClass("is-active");
+	}
+	function versionCheck(v) {
+		currentVersion = "5.3";
+		if(v != currentVersion) {
+			Swal.fire({
+				icon: 'error',
+				title: 'You\'re outdated!',
+				text: 'Please clear your cache in order to use the updated version of this CPPS.',
+				footer: '<a href="https://support.google.com/accounts/answer/9098093" target="blank">How to clear cache?',
+				showConfirmButton: false,
+				allowOutsideClick: false
+			});
+		}
+	}
+	function sendNotification(type, title, message, dismiss) {
+		if(dismiss) {
+			dismiss = true;
+		} else {
+			dismiss = false;
+		}
+		Swal.fire({
+			icon: type,
+			title: title,
+			text: message,
+			showConfirmButton: dismiss,
+			allowOutsideClick: false
+		});	
+	}
+	function restartGame() {
+		var contents = $('#gameWrapper').html();
+		$('#gameWrapper').html("");
+		$('#gameWrapper').html(contents);
+	}
+	function embedCPPS() {
+		showContent("#embed");
+	}
+	function setYoutubeVideo(id, time) {
+		parent.setYoutubeVideo(id, time);
+	}
+	function toggleModalClasses(event) {
+		var modalId = event.currentTarget.dataset.modalId;
+		var modal = $(modalId);
+		modal.toggleClass('is-active');
+	};
+	$('.open-modal').click(toggleModalClasses);
+	$('.modal-close, .close-modal').click(toggleModalClasses);
+</script></body></html>

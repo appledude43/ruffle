@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+@font-face { 
+	font-family: HCo Gotham SSm;
+	src: url(../fonts/gotham-GothamSSm-Light.woff2) format("woff2"), url(../fonts/gotham-GothamSSm-Light.woff) format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: HCo Gotham SSm;
+	src: url(../fonts/gotham-GothamSSm-Book.woff2) format("woff2"), url(../fonts/gotham-GothamSSm-Book.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: HCo Gotham SSm;
+	src: url(../fonts/gotham-GothamSSm-Medium.woff2) format("woff2"), url(../fonts/gotham-GothamSSm-Medium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face { 
+	font-family: HCo Gotham SSm;
+	src: url(../fonts/gotham-GothamSSm-Bold.woff2) format("woff2"), url(../fonts/gotham-GothamSSm-Bold.woff) format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: HCo Gotham SSm;
+	src: url(../fonts/gotham-GothamSSm-Black.woff2) format("woff2"), url(../fonts/gotham-GothamSSm-Black.woff) format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-family: 'HCo Gotham SSm', 'Lato', sans-serif;
+	background-color: #FFF;
+	padding-right: 0px !important;
+	font-weight: 400;
+}
+
+#transformations > .modal-content > .has-background-white > .columns {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+#transformations > .modal-content > .has-background-white > .columns {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+#transformations > .modal-content > .has-background-white > .columns:not(:last-child) {
+	margin-bottom: 0;
+}
+
+#transformations > .modal-content > .has-background-white > .columns > .column {
+	padding: 2px;
+}
